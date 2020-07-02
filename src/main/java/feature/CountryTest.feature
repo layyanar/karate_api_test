@@ -3,7 +3,8 @@ Feature: Check Get Country API
   Background:
     * url 'https://restcountries.eu'
     * header Accept = "application/json'
-    
+
+    @sample
     Scenario: Get list of all countries
       Given path '/rest/v2/all'
       When method get
